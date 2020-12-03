@@ -1,0 +1,25 @@
+{
+  "name": "fibby",
+  "version": "0.0.1",
+  "description": "Something to either lie or calculate numbers in the fibonacci sequence",
+  "main": "index.js",
+  "scripts": {
+    "fibby": "babel-node src/fibby.script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Fibbing",
+    "fibonacci"
+  ],
+  "author": "Robert LaMarc <robertlamarca@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/runtime": "^7.8.7"
+  }
+}
+

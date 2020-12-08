@@ -11,7 +11,7 @@
     "Fibbing",
     "fibonacci"
   ],
-  "author": "Robert LaMarc <robertlamarca@gmail.com>",
+  "author": "Robert LaMarca  <robertlamarca@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.12.8",
@@ -22,4 +22,3 @@
     "@babel/runtime": "^7.8.7"
   }
 }
-

@@ -9,6 +9,8 @@ export const fibonacci = ( count ) => {
 }
 
 
+
+
 export const fibonacciWhile = (count) => {
     let a = 1;
     let b = 0; 
@@ -23,6 +25,24 @@ export const fibonacciWhile = (count) => {
   
     return b;
   }
+
+    
+
+export const memoFibonacci = (count,memo) => {
+    //memo used as cache to store 
+    memo = memo || {} 
+    
+    // check if count is already in stored value 
+    if (memo[count]) {
+        return memo[count];
+    }
+    // base case 
+    if (count <= 1 ) {
+        return 1 ; 
+    } 
+
+    return memo[count] = memoFibonacci(count - 1, memo) + memoFibonacci(count - 2, memo);
+}
 
 
 export const fibonacciSeries = ( count ) => { 
@@ -45,3 +65,4 @@ export const fibonacciSeriesWhile = ( count ) => {
     } 
     return series 
 }
+

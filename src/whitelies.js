@@ -6,7 +6,7 @@ switch(Math.floor(Math.random() * 10)){
         whitelie = "Can't come in today, I'm sick.";
         break;
     case 2:
-        whitelie = "Size doesn't matter.";
+        whitelie = "What a great hairdo!";
         break;
     case 3:
         whitelie = "Everything's fine.";

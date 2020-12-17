@@ -1,4 +1,4 @@
-
+//Ryan wrote a comment
 
 
 // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
@@ -7,9 +7,6 @@ export const fibonacci = ( count ) => {
   
     return fibonacci(count - 1) + fibonacci(count - 2);
 }
-
-
-
 
 export const fibonacciWhile = (count) => {
     let a = 1;
@@ -26,7 +23,6 @@ export const fibonacciWhile = (count) => {
     return b;
   }
 
-    
 
 export const memoFibonacci = (count,memo) => {
     //memo used as cache to store 

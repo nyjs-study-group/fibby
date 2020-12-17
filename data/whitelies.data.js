@@ -13,5 +13,3 @@ export const whiteLiesData = [
 
 
 export const defaultWhiteLie = "How did we get here?";
-
-

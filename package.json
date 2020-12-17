@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "fibby": "babel-node src/fibby.script.js",
-    "whitelies": "babel-node src/whitelies.script.js",
-    "test": "jest"
+    "whitelies" : "babel-node src/whitelies.script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "Fibbing",

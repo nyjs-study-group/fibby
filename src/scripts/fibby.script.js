@@ -3,7 +3,7 @@ import {
     fibonacciWhile,
     fibonacciSeriesWhile,
     memoFibonacci
-} from './fibby';
+} from '../fibby';
 
 // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
 const start = new Date();

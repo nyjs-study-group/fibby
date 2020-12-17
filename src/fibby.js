@@ -8,9 +8,6 @@ export const fibonacci = ( count ) => {
     return fibonacci(count - 1) + fibonacci(count - 2);
 }
 
-
-
-
 export const fibonacciWhile = (count) => {
     let a = 1;
     let b = 0; 
@@ -26,7 +23,6 @@ export const fibonacciWhile = (count) => {
     return b;
   }
 
-    
 
 export const memoFibonacci = (count,memo) => {
     //memo used as cache to store 

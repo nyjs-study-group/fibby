@@ -1,12 +1,12 @@
-import { whiteLiesData } from '../data/whitelies.data';
+// import { whiteLiesData } from '../data/whitelies.data';
 
-import {
-    getRandomWhiteLie,
-    getRandomWhiteLiesList,
-} from './whitelies';
+// import {
+//     getRandomWhiteLie,
+//     getRandomWhiteLiesList,
+// } from './whitelies';
 
 
-console.log( getRandomWhiteLiesList(whiteLiesData, 100))
+// console.log( getRandomWhiteLiesList(whiteLiesData, 100))
 
 
 
@@ -18,14 +18,23 @@ let myArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 //take a chunk of an array and return the integers?
 
 
-rangeFinder = (start, stop, inc) => {
+const rangeFinder = (start, stop, inc = 1) => {
     let arrTwo = [];
-    for( let i = start; i <= stop; i += inc) {
-    arrTwo.push(myArr[i]);
+    let i = start;
+    for( ; i <= stop; i += inc) {
+    arrTwo.push(i);
     }
     
     // slicey = myArr.slice(start, stop);
-     console.log(arrTwo);
+     return arrTwo;
 }
 
-rangeFinder(2, 5, 1);
+
+const aGo = rangeFinder(0, 20);
+aGo.sort( ( a, b ) => Math.random() > .5 ? 1 : -1 );
+
+
+// aGo.sort( ( a, b ) => a < b ? 1 : -1 );
+console.log(aGo);
+
+// const rangeOfItems = [ ...Array( 5 ).keys() ]

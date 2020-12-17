@@ -1,10 +1,10 @@
 
-import { whiteLiesData } from '../data/whitelies.data';
+import { whiteLiesData } from '../../data/whitelies.data';
 
 import { 
     getRandomWhiteLie,
     getRandomWhiteLiesList,
- } from './whitelies';
+ } from '../whitelies';
 
 console.log( getRandomWhiteLie( whiteLiesData ) );
 

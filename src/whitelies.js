@@ -1,35 +1,37 @@
-switch(Math.floor(Math.random() * 10)){
-    case 0:
-        whitelie = "I don't really care about politics.";
-        break;
-    case 1:
-        whitelie = "Can't come in today, I'm sick.";
-        break;
-    case 2:
-        whitelie = "What a great hairdo!";
-        break;
-    case 3:
-        whitelie = "Everything's fine.";
-        break;
-    case 4:
-        whitelie = "Sorry my phone died.";
-        break;
-    case 5:
-        whitelie = "I'll pay you back.";
-        break;
-    case 6:
-        whitelie = "I have a gluten allergy.";
-        break;
-    case 7:
-        whitelie = "The traffic was terrible.";
-        break;
-    case 8:
-        whitelie = "Of course I remember you!";
-        break;
-    case 9:
-        whitelie = "Yup, makes perfect sense!";
-        break; 
-    default: "How did we get here?";
+import { whiteLiesData } from "../data/whitelies.data";
+
+export const getRandomWhiteLie = ( whiteLies ) => { 
+    const randomIndex = 
+        Math.floor( Math.random() * whiteLies.length );
+
+    return whiteLies[ randomIndex ];
 }
 
-console.log("Your white lie is: " + "'" + whitelie + "'");
+export const getRandomWhiteLiesList = ( whiteLies, count ) => { 
+    const whiteLiesList = [];
+
+    let i = 0;
+    for ( ; i !== count; i++ ) { 
+        whiteLiesList[ i ] = getRandomWhiteLie( whiteLies );
+    }
+    return whiteLiesList;
+}
+
+export const getRandomUniqueLies = ( whiteLiesData, count ) => {
+
+    const indexes = range( 0, whiteLiesData.length );
+    // [ 0, 1, 2, 3, ... 9 ];
+    
+    const randomIndexes = randomizeArray( indexes ).slice( 0, count );
+    // [ 9, 5, 2 ... ]
+    // [ 9, 5, 2 ]
+
+    const randomUniqueLies = [];
+    let i = 0;
+    let randomIndexCount = randomIndexes.length
+    for ( ; i !== randomIndexCount; i++ ) { 
+        const index = randomIndex[ i ]; // 9;
+        randomUniqueLies[ i ] = whiteLiesData[ randomIndex[ i ] ]
+    }
+    return getRandomUniqueLies;
+}

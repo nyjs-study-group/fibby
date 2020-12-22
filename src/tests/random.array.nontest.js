@@ -1,6 +1,6 @@
 //TEST THAT AN ARRAY RANDOMIZER IS ACTUALLY MAKING IT RANDOM
 
-describe(
+xdescribe(
     `Does the randomizer randomize?`,
     () => {
         beforeEach( () => {

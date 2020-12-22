@@ -4,8 +4,8 @@
   "description": "Something to either lie or calculate numbers in the fibonacci sequence",
   "main": "index.js",
   "scripts": {
-    "fibby": "babel-node src/fibby.script.js",
-    "whitelies" : "babel-node src/whitelies.script.js",
+    "fibby": "babel-node src/scripts/fibby.script.js",
+    "whitelies" : "babel-node src/scripts/whitelies.script.js",
     "test": "jest"
   },
   "keywords": [

@@ -1,6 +1,6 @@
 import { rangeFinder } from '../utils/array.util';
 
-describe(
+xdescribe(
     `Tests of the range finder that is to emulate that found in python`,
     () => {
     beforeEach( () => { 

@@ -28,12 +28,10 @@ export const rangeFinder =
 }
 
 
-// const aGo = rangeFinder(0, 20);
+export const randomizeArray = ( arr ) => {
+    assert( Array.isArray( arr ), 'Cannot run randomize array on a non-array' );
 
-//BEFORE RANDOMIZATON 
-// aGo.sort( ( a, b ) => a < b ? 1 : -1 );
-// aGo.sort( ( a, b ) => Math.random() > .5 ? 1 : -1 );
-
-
-
-// console.log(aGo);
+    const arrayToSort = [ ...arr ];
+    return arrayToSort.sort( ( a, b ) => Math.random() > .5 ? 1 : -1 );
+}
+    

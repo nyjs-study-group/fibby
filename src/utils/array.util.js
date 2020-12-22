@@ -1,15 +1,21 @@
 
+import { assert } from './assert.util';
+
+
+const invalidArgumentsError = 'Invalid arguments for a range';
+
 export const rangeFinder = 
     ( start, stop, inc = 1) => {
 
-    if ( start === undefined ) { 
-        throw new Error('Invalid arguments for a range');
-    }
+    assert( !!Number.isInteger( start ), invalidArgumentsError );
 
     if ( stop === undefined ) { 
         stop = start;
         start = 0;
     }
+
+    assert( !!Number.isInteger( stop ), invalidArgumentsError );
+    assert( !!Number.isInteger( inc ), invalidArgumentsError );
 
     let arrTwo = [];
     let i = start;

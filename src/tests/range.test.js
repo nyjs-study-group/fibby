@@ -1,4 +1,4 @@
-import { rangeFinder } from '../arrayUtils/utils';
+import { rangeFinder } from '../utils/array.util';
 
 describe(
     `Tests of the range finder that is to emulate that found in python`,
@@ -27,6 +27,12 @@ describe(
         const expectedResult = [5, 10, 15, 20, 25 ]
         const result = range( 5, 30, 5 );
         expect( result ).toEqual( expectedResult );
+    });
+
+    test( `Can it catch an argument type error?`,
+    () => {
+        const rangeMethodCall = () => range( true, 15 );
+        expect( rangeMethodCall ).toThrow();
     });
         
 });    

@@ -1,4 +1,4 @@
-export const whiteLiesData = [ 
+export const whiteLiesData = [
     "I don't really care about politics.",
     "Can't come in today, I'm sick.",
     "What a great hairdo!",
@@ -8,8 +8,8 @@ export const whiteLiesData = [
     "I have a gluten allergy.",
     "The traffic was terrible.",
     "Of course I remember you!",
-    "Yup, makes perfect sense!",
-    "Yup, makes perfect sense!",
+    "Yup, makes perfect sense!", 
 ];
+
 
 export const defaultWhiteLie = "How did we get here?";

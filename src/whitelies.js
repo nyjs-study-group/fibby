@@ -1,5 +1,7 @@
 import { whiteLiesData } from "../data/whitelies.data";
 
+import { randomizeArray } from '../src/utils/array.util';
+
 export const getRandomWhiteLie = ( whiteLies ) => { 
     const randomIndex = 
         Math.floor( Math.random() * whiteLies.length );
@@ -8,13 +10,11 @@ export const getRandomWhiteLie = ( whiteLies ) => {
 }
 
 export const getRandomWhiteLiesList = ( whiteLies, count ) => { 
-    const whiteLiesList = [];
+    if ( count > whiteLies.length ) { count = whiteLies.length }
 
-    let i = 0;
-    for ( ; i !== count; i++ ) { 
-        whiteLiesList[ i ] = getRandomWhiteLie( whiteLies );
-    }
-    return whiteLiesList;
+    const randomizedLies = randomizeArray( whiteLies );
+    return randomizedLies.slice( 0, count );
+
 }
 
 export const getRandomUniqueLies = ( whiteLiesData, count ) => {
